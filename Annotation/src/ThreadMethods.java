@@ -9,6 +9,7 @@ class A extends Thread{
 }
 
 class B extends Thread{
+	@SuppressWarnings("deprecation")
 	public void run(){
 		for (int j=1;j<=5;j++){
 			System.out.println("\n From Thread B: J="+j);
@@ -23,7 +24,7 @@ class C extends Thread{
 	public void run(){
 	for (int k=1;k<=5;k++){
 		//yield();
-		System.out.println("\t From Thread C: i="+k);
+		System.out.println("\t From Thread C: K="+k);
 		if (k==1)
 			try{
 				sleep(1500);
