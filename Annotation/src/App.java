@@ -39,7 +39,7 @@ class Processor {
 		synchronized(this) {
 			System.out.println("Producer thread running...");
 			wait();
-			System.out.println("Producer thread Resumed..");
+			System.out.println("Producer thread Resumed :)");
 		}
 	}
 	
@@ -48,9 +48,9 @@ class Processor {
 		Thread .sleep(2000);
 		
 		synchronized (this) {
-			System.out.println("Waiting for the return key.");
+			System.out.println("Waiting for the return key :(");
 			s.nextLine();
-			System.out.println("Return key pressed");
+			System.out.println("Return key pressed :)");
 			s.close();
 			notify();
 			Thread.sleep(5000);
