@@ -36,14 +36,8 @@ public static void main(String[] args) {
 				Employee ob=null;
 				
 				ArrayList<Employee> li  = new ArrayList<Employee>();
-				
-				
-				
-					
 			
 			    li=(ArrayList<Employee>)oi.readObject();
-			   
-			    
 				
 				System.out.println("Deserialized output for Employee:"+li);
 			}
